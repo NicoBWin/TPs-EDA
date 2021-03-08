@@ -1,2 +1,2 @@
 # EDA
- Programas de EDA
+ Trabajos prácticos de EDA  
