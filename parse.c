@@ -23,12 +23,12 @@ int parseCmdLine(int argc, char *argv[], pCallback p, void *userData) {
   for(int i=1; i<argc; i++){
     
     if(argv[i][0] == '-'){ //Si empieza con - es porque es una opción
-      if (i != (argc - 1)) { //Si no es el ultimo strin
+      if (i != (argc - 1)) { //Si no es el ultimo string
         if (argv[i][1] == '\0'){ //Si es una opcion sin clave
           return ERROR1;
         }
         else{
-          result=p(argv[i], argv[i+1], userData);
+          result=p(argv[i]+1, argv[i+1], userData);
           i++;  //No considero la clave
         }
       }
@@ -42,7 +42,7 @@ int parseCmdLine(int argc, char *argv[], pCallback p, void *userData) {
     }
     
     if( result == OKY || flag==1){ //Solo cuenta un parametro y todas las opciones ingresadas
-       ammount++;
+      ammount++;
     } 
     else{             //Si encontro error la callback devuelde ese error (ERROR3)
       return result;

@@ -18,42 +18,51 @@ Test with: ./main -op1 15 -op2 30 divide
 #include <stdio.h>
 #include "parse.h"
 
+
+#define ARR 6
 /*******************************************************************************
  * FUNCTION PROTOTYPES FOR PRIVATE FUNCTIONS WITH FILE LEVEL SCOPE
  ******************************************************************************/
 /**
- * @brief parseCmdLine
+ * @brief parseCallback Callback de parseCmdLine
  * @param key Si es una opcion recibe la clave si es un parametro recibe NULL
  * @param value Si es una opcion recibe la valor si es un parametro recibe el mismo
  * @param userData Estructura donde se guardan los datos
- * @return Devuelve 0 si no tiene errores y -1 o -2 dependiendo del error que encuentre
+ * @return Devuelve 0 si no tiene errores y -3 si hay un error de la callback
 */
 int parseCallback(char *key, char *value, void *userData); 
 
+
+
+void f_test (int cant, myData_t *userData);
 /*******************************************************************************
  *******************************************************************************
                         GLOBAL FUNCTION DEFINITIONS
  *******************************************************************************
  ******************************************************************************/
-int main (int argc, char *argv[]) {
+int main () {
     myData_t userData;
     int cant=0;
-    if ((cant = parseCmdLine(argc,argv, &parseCallback, &userData)) >= 0) {
-      printf("Cantidad ingresada total: %d\n",cant);
-      printf("(Cant. de parametros + cant. de opciones)\n\n");
+
+    //TEST
+    char* ar_test[ARR]={"./main","-op1","10","-op2","","divide"};
+    cant = parseCmdLine(ARR,ar_test, &parseCallback, &userData);
+    f_test(cant,&userData); 
 
 
-    //Pequeña funcion para imprimir los datos ingresados y verificar que funciona todo bien
-    for(int y=0;y<cant-1;y++) {
-        printf("Key: %s\n",userData.option[y].key);
-        printf("value: %s\n",userData.option[y].value);
-    }
-    printf("Parameter: %s\n", userData.parameter);
+    char* ar_test1[ARR]={"./main","-","10","-op2","5","divide"};
+    cant = parseCmdLine(ARR,ar_test1, &parseCallback, &userData);
+    f_test(cant,&userData); 
 
-    }
-    else {
-      printf("ERROR%d\n\n",-cant);
-    }
+
+    char* ar_test2[ARR]={"./main","-op1","10","-op2","5","-divide"};
+    cant = parseCmdLine(ARR,ar_test2, &parseCallback, &userData);
+    f_test(cant,&userData); 
+
+
+    char* ar_test3[ARR]={"./main","-op1","10","-op2","5","divide"};
+    cant = parseCmdLine(ARR,ar_test3, &parseCallback, &userData);
+    f_test(cant,&userData); 
 
     return 0;
 }
@@ -77,4 +86,27 @@ int parseCallback(char *key, char *value, void *userData) {
     }
     state=OKY;
     return state;
+}
+
+
+void f_test (int cant, myData_t *userData) {
+    if (cant >= 0) {
+    /*  printf("Cantidad ingresada total: %d\n",cant);
+      printf("(Cant. de parametros + cant. de opciones)\n");
+
+    //Pequeña funcion para imprimir los datos ingresados y verificar que funciona todo bien
+    
+    for(int y=0;y<cant-1;y++) {
+        printf("Key: %s\n",userData->option[y].key);
+        printf("value: %s\n",userData->option[y].value);
+    }
+    printf("Parameter: %s\n", userData->parameter);*/
+    printf("TODO OK!\n\n");
+    }
+
+    else {
+      printf("ERROR%d\n\n",-cant);
+    }
+
+    printf("\n");
 }

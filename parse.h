@@ -44,15 +44,6 @@ typedef struct {
 */
 int parseCmdLine(int argc, char *argv[], pCallback p, void *userData);
 
-/**
- * @brief parseCallback Callback de parseCmdLine
- * @param key Si es una opcion recibe la clave si es un parametro recibe NULL
- * @param value Si es una opcion recibe la valor si es un parametro recibe el mismo
- * @param userData Estructura donde se guardan los datos
- * @return Devuelve 0 si no tiene errores y -3 si hay un error de la callback
-*/
-int parseCallback(char *key, char *value, void *userData); 
-
 /*******************************************************************************
  ******************************************************************************/
 
