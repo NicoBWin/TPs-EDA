@@ -33,7 +33,11 @@ Test with: ./main -op1 15 -op2 30 divide
 int parseCallback(char *key, char *value, void *userData); 
 
 
-
+/**
+ * @brief f_test Función para saber si parseCallback funciono o no
+ * @param cant El resultado de parseCallback
+ * @param userData Puntero a la estructura
+*/
 void f_test (int cant, myData_t *userData);
 /*******************************************************************************
  *******************************************************************************
