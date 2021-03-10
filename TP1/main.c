@@ -18,8 +18,25 @@ Test with: ./main -op1 15 -op2 30 divide
 #include <stdio.h>
 #include "parse.h"
 
-
+/*******************************************************************************
+ * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
+ ******************************************************************************/
 #define ARR 6
+
+/*******************************************************************************
+ * ENUMERATIONS AND STRUCTURES AND TYPEDEFS
+ ******************************************************************************/
+typedef struct {
+    char* key;
+    char* value;
+} OPTION_t ;
+
+typedef struct {
+    OPTION_t option[SZ];    //Se puede cargar SZ opciones
+    char* parameter;        //Solo se puede cargar un parametro,si cargas mas sobre escribe el ultimo ingresado
+} myData_t ;
+
+
 /*******************************************************************************
  * FUNCTION PROTOTYPES FOR PRIVATE FUNCTIONS WITH FILE LEVEL SCOPE
  ******************************************************************************/
@@ -49,7 +66,7 @@ int main () {
     int cant=0;
 
     //TEST
-    char* ar_test[ARR]={"./main","-op1","10","-op2","","divide"};
+    char* ar_test[ARR]={"./main","op1","10","op2","cuatro","divide"};
     cant = parseCmdLine(ARR,ar_test, &parseCallback, &userData);
     f_test(cant,&userData); 
 
@@ -105,7 +122,9 @@ void f_test (int cant, myData_t *userData) {
         printf("value: %s\n",userData->option[y].value);
     }
     printf("Parameter: %s\n", userData->parameter);*/
-    printf("TODO OK!\n\n");
+    printf("TODO OK!\n");
+    printf("Cantidad ingresada total: %d\n",cant);
+    printf("(Cant. de parametros + cant. de opciones)\n\n");
     }
 
     else {

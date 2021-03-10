@@ -18,7 +18,6 @@
 int parseCmdLine(int argc, char *argv[], pCallback p, void *userData) {
   int ammount=0;
   int result;
-  int flag=0;
 
   for(int i=1; i<argc; i++){
     
@@ -38,10 +37,9 @@ int parseCmdLine(int argc, char *argv[], pCallback p, void *userData) {
     }
     else {  //Si no es una opcion entonces es un parametro
       result=p(NULL, argv[i], userData);
-      flag++;
     }
     
-    if( result == OKY || flag==1){ //Solo cuenta un parametro y todas las opciones ingresadas
+    if( result == OKY){ //Solo cuenta un parametro y todas las opciones ingresadas
       ammount++;
     } 
     else{             //Si encontro error la callback devuelde ese error (ERROR3)

@@ -21,17 +21,6 @@
  ******************************************************************************/
 typedef int (*pCallback) (char *, char*, void *); 
 
-//CAMBIAR AL MAIN
-typedef struct {
-    char* key;
-    char* value;
-} OPTION_t ;
-
-typedef struct {
-    OPTION_t option[SZ];    //Se puede cargar SZ opciones
-    char* parameter;        //Solo se puede cargar un parametro,si cargas mas sobre escribe el ultimo ingresado
-} myData_t ;
-
 /*******************************************************************************
  * FUNCTION PROTOTYPES WITH GLOBAL SCOPE
  ******************************************************************************/
