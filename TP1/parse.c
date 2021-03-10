@@ -1,6 +1,6 @@
 /***************************************************************************//**
   @file     +Parse.c+
-  @brief    +Archivo principal de la libreria+
+  @brief    +Archivo principal de la libreria parser+
   @author   +Grupo 10+
  ******************************************************************************/
 
@@ -15,6 +15,7 @@
                         GLOBAL FUNCTION DEFINITIONS
  *******************************************************************************
  ******************************************************************************/
+//Recibe el ingreso de terminal y analiza si es una opcion o un parametro y los envía a la callback p
 int parseCmdLine(int argc, char *argv[], pCallback p, void *userData) {
   int ammount=0;
   int result;
@@ -27,8 +28,8 @@ int parseCmdLine(int argc, char *argv[], pCallback p, void *userData) {
           return ERROR1;
         }
         else{
-          result=p(argv[i]+1, argv[i+1], userData);
-          i++;  //No considero la clave
+          result=p(argv[i]+1, argv[i+1], userData); //argv[i]+1 es para no enviar el - inicial de una opción
+          i++;  //Salteo la clave para analizar el siguiente dato ingresado 
         }
       }
       else {  //Si es el ultimo string y empieza con "-" entonces hay error tipo 2
