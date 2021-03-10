@@ -21,6 +21,7 @@
  ******************************************************************************/
 typedef int (*pCallback) (char *, char*, void *); 
 
+//CAMBIAR AL MAIN
 typedef struct {
     char* key;
     char* value;
