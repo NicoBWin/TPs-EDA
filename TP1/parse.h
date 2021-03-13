@@ -10,7 +10,7 @@
 /*******************************************************************************
  * CONSTANT AND MACRO DEFINITIONS USING #DEFINE
  ******************************************************************************/
-#define OKY 0        //La funcion recursiva no encontro errores
+#define OKY 1        //La funcion callback no encontro errores
 #define ERROR1  -1   //Dentro de lo que sería una opcion no hay clave
 #define ERROR2  -2   //Termina con una opcion sin valor
 #define ERROR3  -3   //Error de la callback
