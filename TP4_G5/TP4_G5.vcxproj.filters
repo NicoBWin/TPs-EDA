@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\wwalking">
+      <UniqueIdentifier>{b3135341-062f-424b-ab57-f20f7ae1355b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\wjump">
+      <UniqueIdentifier>{a7f76534-d9c9-47ba-b7d1-3645f25c6aec}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="imgs\Scenario.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="imgs\wwalking\wwalk-F1.png">
+      <Filter>Resource Files\wwalking</Filter>
+    </Image>
+    <Image Include="imgs\wwalking\wwalk-F2.png">
+      <Filter>Resource Files\wwalking</Filter>
+    </Image>
+    <Image Include="imgs\wwalking\wwalk-F3.png">
+      <Filter>Resource Files\wwalking</Filter>
+    </Image>
+    <Image Include="imgs\wwalking\wwalk-F4.png">
+      <Filter>Resource Files\wwalking</Filter>
+    </Image>
+    <Image Include="imgs\wwalking\wwalk-F5.png">
+      <Filter>Resource Files\wwalking</Filter>
+    </Image>
+    <Image Include="imgs\wwalking\wwalk-F6.png">
+      <Filter>Resource Files\wwalking</Filter>
+    </Image>
+    <Image Include="imgs\wwalking\wwalk-F7.png">
+      <Filter>Resource Files\wwalking</Filter>
+    </Image>
+    <Image Include="imgs\wwalking\wwalk-F8.png">
+      <Filter>Resource Files\wwalking</Filter>
+    </Image>
+    <Image Include="imgs\wwalking\wwalk-F9.png">
+      <Filter>Resource Files\wwalking</Filter>
+    </Image>
+    <Image Include="imgs\wwalking\wwalk-F10.png">
+      <Filter>Resource Files\wwalking</Filter>
+    </Image>
+    <Image Include="imgs\wwalking\wwalk-F11.png">
+      <Filter>Resource Files\wwalking</Filter>
+    </Image>
+    <Image Include="imgs\wwalking\wwalk-F12.png">
+      <Filter>Resource Files\wwalking</Filter>
+    </Image>
+    <Image Include="imgs\wwalking\wwalk-F13.png">
+      <Filter>Resource Files\wwalking</Filter>
+    </Image>
+    <Image Include="imgs\wwalking\wwalk-F14.png">
+      <Filter>Resource Files\wwalking</Filter>
+    </Image>
+    <Image Include="imgs\wwalking\wwalk-F15.png">
+      <Filter>Resource Files\wwalking</Filter>
+    </Image>
+    <Image Include="imgs\wjump\wjump-F1.png">
+      <Filter>Resource Files\wjump</Filter>
+    </Image>
+    <Image Include="imgs\wjump\wjump-F2.png">
+      <Filter>Resource Files\wjump</Filter>
+    </Image>
+    <Image Include="imgs\wjump\wjump-F3.png">
+      <Filter>Resource Files\wjump</Filter>
+    </Image>
+    <Image Include="imgs\wjump\wjump-F4.png">
+      <Filter>Resource Files\wjump</Filter>
+    </Image>
+    <Image Include="imgs\wjump\wjump-F5.png">
+      <Filter>Resource Files\wjump</Filter>
+    </Image>
+    <Image Include="imgs\wjump\wjump-F6.png">
+      <Filter>Resource Files\wjump</Filter>
+    </Image>
+    <Image Include="imgs\wjump\wjump-F7.png">
+      <Filter>Resource Files\wjump</Filter>
+    </Image>
+    <Image Include="imgs\wjump\wjump-F8.png">
+      <Filter>Resource Files\wjump</Filter>
+    </Image>
+    <Image Include="imgs\wjump\wjump-F9.png">
+      <Filter>Resource Files\wjump</Filter>
+    </Image>
+    <Image Include="imgs\wjump\wjump-F10.png">
+      <Filter>Resource Files\wjump</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="allLoad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="const.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Worm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="allPrint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="allLoad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Worm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="allPrint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>
