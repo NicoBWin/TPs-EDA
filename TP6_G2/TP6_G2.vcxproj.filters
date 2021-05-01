@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\Nico.B">
+      <UniqueIdentifier>{f05689aa-ba3c-4522-a7b6-487a1ad02fe6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Juan.C">
+      <UniqueIdentifier>{7159db15-8941-44cc-bbf4-1951bb685019}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Luciano.C">
+      <UniqueIdentifier>{6f4587b6-e9e0-4e7b-8d57-dd8e9a97edfe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Class_NICOLAS.B\DispN.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="basicLCD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Class_JUAN.C\DispJ.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Class_LUCIANO.C\DispL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="basicLCD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Class_NICOLAS.B\DispN.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Class_JUAN.C\DispJ.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Class_LUCIANO.C\DispL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Class_NICOLAS.B\resources\background.jpg">
+      <Filter>Resource Files\Nico.B</Filter>
+    </Image>
+    <Image Include="Class_JUAN.C\res\Jbackground.png">
+      <Filter>Resource Files\Juan.C</Filter>
+    </Image>
+    <Image Include="Class_LUCIANO.C\resouces\background.jpg">
+      <Filter>Resource Files\Luciano.C</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Class_NICOLAS.B\resources\font.TTF">
+      <Filter>Resource Files\Nico.B</Filter>
+    </Font>
+    <Font Include="Class_JUAN.C\res\verdana.ttf">
+      <Filter>Resource Files\Juan.C</Filter>
+    </Font>
+    <Font Include="Class_LUCIANO.C\resouces\Blanka-Regular.ttf">
+      <Filter>Resource Files\Luciano.C</Filter>
+    </Font>
+  </ItemGroup>
+</Project>
