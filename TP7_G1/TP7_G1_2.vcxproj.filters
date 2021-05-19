@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="LCDs">
+      <UniqueIdentifier>{16ae375d-54b1-489c-a734-735e09b92e97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LCDs\NicoLCD">
+      <UniqueIdentifier>{13f09499-a9c3-4975-9d52-edc377cdc7fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LCDs\FranLCD">
+      <UniqueIdentifier>{acdb8bea-2c57-40d3-9939-62f948991f3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LCDs\MiliLCD">
+      <UniqueIdentifier>{7d31426e-9475-4d42-b14b-1f75bae9afb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LCDs\NicoLCD\resources">
+      <UniqueIdentifier>{ca98c55c-d8d3-4490-bd49-8daeb0b464ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LCDs\MiliLCD\resources">
+      <UniqueIdentifier>{1b8ced75-c269-4001-aac6-af034f596ae2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LCDs\FranLCD\resources">
+      <UniqueIdentifier>{d61465e0-8cc3-4775-b8dc-5cc4ab7bd5bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGui">
+      <UniqueIdentifier>{add567ef-32b4-4707-bdc8-b6758b39bb1b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Allegro.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Printer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LCDs\basicLCD.cpp">
+      <Filter>LCDs</Filter>
+    </ClCompile>
+    <ClCompile Include="LCDs\NicoLCD\NicoLCD.cpp">
+      <Filter>LCDs\NicoLCD</Filter>
+    </ClCompile>
+    <ClCompile Include="LCDs\MiliLCD\milagrosLCD.cpp">
+      <Filter>LCDs\MiliLCD</Filter>
+    </ClCompile>
+    <ClCompile Include="LCDs\FranLCD\DisplayFran.cpp">
+      <Filter>LCDs\FranLCD</Filter>
+    </ClCompile>
+    <ClCompile Include="Imgui\imgui.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Imgui\imgui_demo.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Imgui\imgui_draw.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Imgui\imgui_impl_allegro5.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Imgui\imgui_tables.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Imgui\imgui_widgets.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Printer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Allegro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LCDs\basicLCD.h">
+      <Filter>LCDs</Filter>
+    </ClInclude>
+    <ClInclude Include="LCDs\NicoLCD\NicoLCD.h">
+      <Filter>LCDs\NicoLCD</Filter>
+    </ClInclude>
+    <ClInclude Include="LCDs\MiliLCD\milagrosLCD.h">
+      <Filter>LCDs\MiliLCD</Filter>
+    </ClInclude>
+    <ClInclude Include="LCDs\FranLCD\DisplayFran.h">
+      <Filter>LCDs\FranLCD</Filter>
+    </ClInclude>
+    <ClInclude Include="Imgui\imconfig.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Imgui\imgui.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Imgui\imgui_impl_allegro5.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Imgui\imgui_internal.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Imgui\imstb_rectpack.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Imgui\imstb_textedit.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Imgui\imstb_truetype.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="LCDs\NicoLCD\resources\backgroundN.jpg">
+      <Filter>LCDs\NicoLCD\resources</Filter>
+    </Image>
+    <Image Include="LCDs\FranLCD\resources\displayFran.png">
+      <Filter>LCDs\FranLCD\resources</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="LCDs\NicoLCD\resources\fontN.TTF">
+      <Filter>LCDs\NicoLCD\resources</Filter>
+    </Font>
+    <Font Include="LCDs\MiliLCD\resources\04B_30__.TTF">
+      <Filter>LCDs\MiliLCD\resources</Filter>
+    </Font>
+    <Font Include="LCDs\FranLCD\resources\FontFran.ttf">
+      <Filter>LCDs\FranLCD\resources</Filter>
+    </Font>
+  </ItemGroup>
+</Project>
